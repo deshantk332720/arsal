@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Creative Hands Shop</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Creative Hands Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -55,15 +55,17 @@
     }
 
     .btn.info {
-      background:#f29f05 ;
+      background: #f29f05;
     }
 
     .form-popup {
       display: none;
       position: fixed;
       z-index: 999;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-color: rgba(0,0,0,0.5);
       justify-content: center;
       align-items: center;
@@ -79,10 +81,11 @@
     }
 
     .form-box img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       margin-bottom: 10px;
+      border-radius: 8px;
     }
 
     .form-box input {
@@ -110,7 +113,7 @@
       color: red;
     }
 
-    .w{
+    .w {
       font-size: large;
       text-align: left;
     }
@@ -119,151 +122,317 @@
 <body>
 
   <h2 style="text-align:center;">Creative Hands Shop</h2>
-<!------------------------------------------------------------------------row 1------------------------------------------------------------------------>
+
+
+<!--------------------------------------------------  row 1   ---    1 , 2 ,3        ---------------------------------------------------->
   <div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Tote Bag">
+      
+<img src="product/1.jpg" alt="Tote Bag" />
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-      <button class="btn info " onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/1.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/1.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Art Shoe">
+      <img src="product/2.jpg" alt="Art Shoe" />
       <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/2.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/2.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/2.jpg" alt="Art Piece">
+      <img src="product/3.jpg" alt="Art Piece" />
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/3.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/3.jpg')"
+      >
+        More Info
+      </button>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  
+<!--------------------------------------------------------------------------------------------------------->
 
-
-<!------------------------------------------------------------------------row 2------------------------------------------------------------------------>
-  <div class="product-container">
+<!--------------------------------------------------  row 2   --------------     4 , 5 , 6             ----------------------------------------->
+<div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Tote Bag">
+      
+<img src="product/4.jpg" alt="Tote Bag" />
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-      <button class="btn info " onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/4.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/4.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Art Shoe">
+      <img src="product/5.jpg" alt="Art Shoe" />
       <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/5.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/5.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/2.jpg" alt="Art Piece">
+      <img src="product/6.jpg" alt="Art Piece" />
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/6.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/6.jpg')"
+      >
+        More Info
+      </button>
     </div>
-  </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  
+  </div>     
 
-<!------------------------------------------------------------------------row 3------------------------------------------------------------------------>
-  <div class="product-container">
+<!--------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------  row 4   -----------  7 , 8 , 9     -------------------------------------------->
+      <div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Tote Bag">
+      
+<img src="product/7.jpg" alt="Tote Bag" />
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-      <button class="btn info " onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/7.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/7.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Art Shoe">
+      <img src="product/8.jpg" alt="Art Shoe" />
       <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/8.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/8.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/2.jpg" alt="Art Piece">
+      <img src="product/9.jpg" alt="Art Piece" />
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/9.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/9.jpg')"
+      >
+        More Info
+      </button>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  
+<!--------------------------------------------------------------------------------------------------------->
 
-<!------------------------------------------------------------------------row 4------------------------------------------------------------------------>
-  <div class="product-container">
+<!--------------------------------------------------  row 5   ----------------   10 , 11 , 12             --------------------------------------->
+      <div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Tote Bag">
+      
+<img src="product/10.jpg" alt="Tote Bag" />
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-      <button class="btn info " onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/10.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/10.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Art Shoe">
+      <img src="product/11.jpg" alt="Art Shoe" />
       <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/11.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/11.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/2.jpg" alt="Art Piece">
+      <img src="product/12.jpg" alt="Art Piece" />
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/12.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/12.jpg')"
+      >
+        More Info
+      </button>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  
+<!--------------------------------------------------------------------------------------------------------->
 
-<!------------------------------------------------------------------------row 5------------------------------------------------------------------------>
-  <div class="product-container">
+<!--------------------------------------------------  row 6  -------------------    13 , 14 ,15           ------------------------------------>
+      <div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Tote Bag">
+      
+<img src="product/13.jpg" alt="Tote Bag" />
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-      <button class="btn info " onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/13.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/13.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Art Shoe">
+      <img src="product/14.jpg" alt="Art Shoe" />
       <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/14.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/14.jpg')"
+      >
+        More Info
+      </button>
     </div>
 
     <div class="product-item">
-      <img src="images/2.jpg" alt="Art Piece">
+      <img src="product/15.jpg" alt="Art Piece" />
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
-      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/15.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/15.jpg')"
+      >
+        More Info
+      </button>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  
+<!--------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------  row 7  --------------       16 , 17 , 18                 ----------------------------------------->
+      <div class="product-container">
+    <div class="product-item">
+      
+<img src="product/16.jpg" alt="Tote Bag" />
+      <h3>Custom Tote Bag</h3>
+      <p>Rs. 999</p>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/16.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/16.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+
+    <div class="product-item">
+      <img src="product/17.jpg" alt="Art Shoe" />
+      <h3>Custom Art Shoe</h3>
+      <p>Rs. 799</p>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/17.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/17.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+
+    <div class="product-item">
+      <img src="product/18.jpg" alt="Art Piece" />
+      <h3>Custom Art Piece</h3>
+      <p>Rs. 799</p>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/18.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/18.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+  </div>
+<!--------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------  row 8   -------------------------   19 , 20 , 21       ------------------------------>
+      <div class="product-container">
+    <div class="product-item">
+      
+<img src="product/19.jpg" alt="Tote Bag" />
+      <h3>Custom Tote Bag</h3>
+      <p>Rs. 999</p>
+      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'product/19.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Tote Bag', 'product/19.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+
+    <div class="product-item">
+      <img src="product/20.jpg" alt="Art Shoe" />
+      <h3>Custom Art Shoe</h3>
+      <p>Rs. 799</p>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'product/20.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Shoe', 'product/20.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+
+    <div class="product-item">
+      <img src="product/21.jpg" alt="Art Piece" />
+      <h3>Custom Art Piece</h3>
+      <p>Rs. 799</p>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'product/21.jpg')">Order Now</button>
+      <button
+        class="btn info"
+        onclick="openInfoPopup('Custom Art Piece', 'product/21.jpg')"
+      >
+        More Info
+      </button>
+    </div>
+  </div>
+ 
+<!--------------------------------------------------------------------------------------------------------->
 
 
 
@@ -310,52 +479,71 @@
 
 
 
-<!-- Order Form Popup -->
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------->
+  <!-- Order Form Popup -->
   <div id="orderForm" class="form-popup">
     <div class="form-box">
       <span class="close" onclick="closeForm()">×</span>
-      <img id="productImage" src="" alt="">
+      <img id="productImage" src="" alt="" />
       <h3 id="productName">Item Name</h3>
-     <p class="w" > "Customization is available."</p>
-      <input type="text" id="customerName" placeholder="Your Name">
-      <input type="text" id="customerAddress" placeholder="Your Address">
-      <input type="number" id="quantity" placeholder="Quantity">
+      <p class="w">Customization is available.</p>
+      <input type="text" id="customerName" placeholder="Your Name" />
+      <input type="text" id="customerAddress" placeholder="Your Address" />
+      <input type="number" id="quantity" placeholder="Quantity" />
       <button onclick="sendOrder()">Confirm Order on WhatsApp</button>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------------------->
   <!-- Info Popup -->
   <div id="infoPopup" class="form-popup">
-    <div class="form-box" style="width: 280px;">
+    <div class="form-box" style="width: 320px;">
       <span class="close" onclick="closeInfoPopup()">×</span>
-     
+      <img id="infoImage" src="" alt="Product Image" />
       <h3 id="infoTitle">Product Title</h3>
-      <p id="infoDescription" style="color:#333; font-size:14px;"></p>
-         <p >
-        <li>Would you like to add any special customization to this product? Please inform us on WhatsApp.</li>
+      
+      <p>
+        <li>
+          Would you like to add any special customization to this product? Please
+          inform us on WhatsApp.
+        </li>
       </p>
     </div>
   </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------>
-  <!-- JavaScript -->
+
   <script>
-    let selectedProduct = '';
+    let selectedProduct = "";
 
     function openOrderForm(name, image) {
       selectedProduct = name;
-      document.getElementById('productName').innerText = name;
-      document.getElementById('productImage').src = image;
-      document.getElementById('orderForm').style.display = 'flex';
+      document.getElementById("productName").innerText = name;
+      document.getElementById("productImage").src = image;
+      document.getElementById("orderForm").style.display = "flex";
     }
 
     function closeForm() {
-      document.getElementById('orderForm').style.display = 'none';
+      document.getElementById("orderForm").style.display = "none";
     }
+<!--------------------------------------------------------------------------------------------------------->
+
 
     function sendOrder() {
-      const name = document.getElementById('customerName').value;
-      const address = document.getElementById('customerAddress').value;
-      const quantity = document.getElementById('quantity').value;
+      const name = document.getElementById("customerName").value;
+      const address = document.getElementById("customerAddress").value;
+      const quantity = document.getElementById("quantity").value;
 
       if (!name || !address || !quantity) {
         alert("Please fill in your name, address and quantity.");
@@ -363,70 +551,22 @@
       }
 
       const message = `Hello! I would like to order:\n${selectedProduct}\nName: ${name}\nQuantity: ${quantity}\nAddress: ${address}`;
-      const phoneNumber = '+923363886202'; // Your WhatsApp number
+      const phoneNumber = "+923363886202"; // Your WhatsApp number
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-      window.open(whatsappURL, '_blank');
+      window.open(whatsappURL, "_blank");
     }
 
-    function openInfoPopup(title, description) {
-      document.getElementById('infoTitle').innerText = title;
-      document.getElementById('infoDescription').innerText = description;
-      document.getElementById('infoPopup').style.display = 'flex';
+    function openInfoPopup(title, image, description) {
+      document.getElementById("infoTitle").innerText = title;
+      document.getElementById("infoImage").src = image.trim();
+      
+      document.getElementById("infoPopup").style.display = "flex";
     }
 
     function closeInfoPopup() {
-      document.getElementById('infoPopup').style.display = 'none';
+      document.getElementById("infoPopup").style.display = "none";
     }
   </script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-
-
