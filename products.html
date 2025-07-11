@@ -3,41 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>Creative Hands Shop</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f9f9f9;
       padding: 20px;
+      margin: 0;
     }
 
-    .product-card {
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-item {
       background: #fff;
-      padding: 15px;
       width: 250px;
+      padding: 15px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      margin: auto;
     }
 
-    .product-card img {
+    .product-item img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
     }
 
+    .product-item h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-item p {
+      color: green;
+      font-weight: bold;
+    }
+
     .btn {
       background: #f29f05;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 15px;
       border: none;
-      margin-top: 10px;
+      margin: 5px 2px;
       border-radius: 5px;
       cursor: pointer;
     }
 
-    /* Popup Form Styles */
+    .btn.info {
+      background: #555;
+    }
+
     .form-popup {
       display: none;
       position: fixed;
@@ -89,229 +109,39 @@
       font-size: 20px;
       color: red;
     }
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 20px;
-}
-
-.product-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Wraps items on smaller screens */
-}
-
-.product-item {
-  background: #fff;
-  width: 250px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.product-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.product-item h3 {
-  margin: 10px 0 5px;
-}
-
-.product-item p {
-  color: green;
-  font-weight: bold;
-}
-
-.btn {
-  background: #f29f05;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-
-    
-
   </style>
 </head>
 <body>
 
   <h2 style="text-align:center;">Creative Hands Shop</h2>
 
-
-
-<div>
-
   <div class="product-container">
     <div class="product-item">
-      <img src="images/4.jpg" alt="Item 1">
+      <img src="images/4.jpg" alt="Tote Bag">
       <h3>Custom Tote Bag</h3>
       <p>Rs. 999</p>
       <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
+      <button class="btn info" onclick="openInfoPopup('Custom Tote Bag', 'A stylish hand-painted tote bag for your everyday use.')">More Info</button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
+      <img src="images/3.jpg" alt="Art Shoe">
+      <h3>Custom Art Shoe</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Shoe', 'images/3.jpg')">Order Now</button>
+      <button class="btn info" onclick="openInfoPopup('Custom Art Shoe', 'Hand-painted shoes with unique designs just for you.')">More Info</button>
     </div>
 
     <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
+      <img src="images/2.jpg" alt="Art Piece">
       <h3>Custom Art Piece</h3>
       <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
+      <button class="btn" onclick="openOrderForm('Custom Art Piece', 'images/2.jpg')">Order Now</button>
+      <button class="btn info" onclick="openInfoPopup('Custom Art Piece', 'Personalized art made with care and creativity.')">More Info</button>
     </div>
   </div>
 
-  
-
-
-  <div class="product-container">
-    <div class="product-item">
-      <img src="images/4.jpg" alt="Item 1">
-      <h3>Custom Tote Bag</h3>
-      <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-    </div>
-
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-    
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-  </div>
-
-  
-
-
-  <div class="product-container">
-    <div class="product-item">
-      <img src="images/4.jpg" alt="Item 1">
-      <h3>Custom Tote Bag</h3>
-      <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-    </div>
-
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-    
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-  </div>
-
-  
-
-
-  <div class="product-container">
-    <div class="product-item">
-      <img src="images/4.jpg" alt="Item 1">
-      <h3>Custom Tote Bag</h3>
-      <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-    </div>
-
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-    
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-  </div>
-
-  
-
-
-  <div class="product-container ">
-    <div class="product-item">
-      <img src="images/4.jpg" alt="Item 1">
-      <h3>Custom Tote Bag</h3>
-      <p>Rs. 999</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', 'images/4.jpg')">Order Now</button>
-    </div>
-
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-    
-    <div class="product-item">
-      <img src="images/3.jpg" alt="Item 2">
-      <h3>Custom Art Piece</h3>
-      <p>Rs. 799</p>
-      <button class="btn" onclick="openOrderForm('Custom Tote Bag', '')">Order Now</button>
-    </div>
-  </div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Popup Form -->
+  <!-- Order Form Popup -->
   <div id="orderForm" class="form-popup">
     <div class="form-box">
       <span class="close" onclick="closeForm()">×</span>
@@ -319,33 +149,19 @@ body {
       <h3 id="productName">Item Name</h3>
       <input type="text" id="customerName" placeholder="Your Name">
       <input type="text" id="customerAddress" placeholder="Your Address">
+      <input type="number" id="quantity" placeholder="Quantity">
       <button onclick="sendOrder()">Confirm Order on WhatsApp</button>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- Info Popup -->
+  <div id="infoPopup" class="form-popup">
+    <div class="form-box" style="width: 280px;">
+      <span class="close" onclick="closeInfoPopup()">×</span>
+      <h3 id="infoTitle">Product Title</h3>
+      <p id="infoDescription" style="color:#333; font-size:14px;"></p>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script>
@@ -365,19 +181,34 @@ body {
     function sendOrder() {
       const name = document.getElementById('customerName').value;
       const address = document.getElementById('customerAddress').value;
+      const quantity = document.getElementById('quantity').value;
 
-      if (!name || !address) {
-        alert("Please fill in your name and address.");
+      if (!name || !address || !quantity) {
+        alert("Please fill in your name, address and quantity.");
         return;
       }
 
-      const message = `Hello! I would like to order:\n${selectedProduct}\nName: ${name}\nAddress: ${address}`;
-      const phoneNumber = '+923363886202'; // Replace with your real WhatsApp number
+      const message = `Hello! I would like to order:\n${selectedProduct}\nName: ${name}\nQuantity: ${quantity}\nAddress: ${address}`;
+      const phoneNumber = '+923363886202'; // Your WhatsApp number
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
       window.open(whatsappURL, '_blank');
     }
+
+    function openInfoPopup(title, description) {
+      document.getElementById('infoTitle').innerText = title;
+      document.getElementById('infoDescription').innerText = description;
+      document.getElementById('infoPopup').style.display = 'flex';
+    }
+
+    function closeInfoPopup() {
+      document.getElementById('infoPopup').style.display = 'none';
+    }
   </script>
+
+</body>
+</html>
+
 
 
 
@@ -422,5 +253,6 @@ body {
 
 </body>
 </html>
+
 
 
